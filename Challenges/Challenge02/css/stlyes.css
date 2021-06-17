@@ -18,7 +18,7 @@ body {
   color: var(--soft-white);
   font-family: 'Viga', sans-serif;
 }
-
+/* TODO: Rushing -> Go back and add classes. */
 section {
   display: flex;
   flex-direction: column;
