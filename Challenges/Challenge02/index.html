@@ -16,16 +16,12 @@
     <link rel="stylesheet" href="../Challenge02/css/stlyes.css" />
     <title>Mintbean Learn-a-bit Challenge 02 - Card</title>
   </head>
-
   <body>
-    <section>
-      <header>
-        <h1>What is it about?</h1>
-      </header>
-      <article>
-        <img src="../Challenge02/images/mintbean-dome.png" alt="" />
-        <main>
-          <h4>What is learn-a-bit about?</h4>
+    <section class="about">
+      <h2 class="section-title">What is it about?</h2>
+      <article class="card">
+        <div class="card-container">
+          <h3 class="card-title">What is learn-a-bit about?</h3>
           <p>
             Learn-a-bit will teach you the fundamentals through a hands-on
             approach. You will gain versatility in the basic tools of the trade
@@ -33,15 +29,25 @@
             well-designed CSS. You will improve your design skills and start to
             create attractive and attention-grabbing portfolio pieces while also
             gaining confidence to tackle any of the harder hackathons.
-            <br /><br />
+          </p>
+          <p>
             In the end, the first impression and presentation of products are
             the main reason for its success and appeal. Our products represent
             ourselves and our knowledge so we should make it shine in the best
             light.
           </p>
-          <a href="/" type="button"> <p>Join a learn-a-bit</p></a>
-        </main>
+          <a href="/" class="button">Join a learn-a-bit</a>
+        </div>
       </article>
     </section>
   </body>
 </html>
+
+<!--! Feedback Notes -->
+<!--Add naming convention i.e. classes not element tags  -->
+<!-- Declaration Order in CSS -->
+<!-- Ex. Margin Bottom is taking 8% from its parent element and it is always changing based on the user's viewpoint and leads to messiness. Not truly helping responsivity. So stick to `rem` and `em` in cases you know the font size of the parent, rather than vw, vh and %. Most browser default is 16px so using em you have to calc rem. for accurate use.
+
+Remember -> Flexbox and rem are the main tools you need.
+-> use div when their is no preexisting sematic component already
+-->

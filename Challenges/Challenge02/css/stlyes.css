@@ -1,10 +1,13 @@
 :root {
+  --body: 'Rubik', sans-serif;
+  --header: 'Viga', sans-serif;
   --background-color: #4143b1;
   --primary-color: #5ef4d6;
   --soft-white: #f1fff6;
   --secondary-color: #191f26;
   --secondary-bg-color: #221727;
 }
+/* Broswer Reset -> Starts */
 *,
 *::before,
 *::after {
@@ -12,122 +15,127 @@
   padding: 0;
   box-sizing: border-box;
 }
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  display: block;
+  height: 100%;
+}
+/* Broswer Reset -> Ends */
+
 body {
   background-color: var(--background-color);
-  min-height: 100vh;
+  font-family: var(--body);
   color: var(--soft-white);
-  font-family: 'Viga', sans-serif;
 }
-/* TODO: Rushing -> Go back and add classes. */
-section {
+.about {
+  /* Good use case for vh */
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
-h1 {
+
+.section-title {
   display: flex;
-  justify-content: center;
-  min-height: 3vh;
-  margin: 7%;
+  place-content: center;
+  height: 4rem;
+  margin-top: 1rem;
   color: var(--primary-color);
 }
 
-article {
+.card {
   display: flex;
   flex-direction: column;
+  width: 79%;
   margin: 0 auto;
   text-align: left;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
-  min-height: 89vh;
-  width: 70vw;
   background-color: var(--secondary-bg-color);
 }
-img {
-  width: 69vw;
-  height: 15vh;
+
+.section-title,
+.card-title {
+  text-transform: uppercase;
+  font-family: var(--header);
+}
+.card::before {
+  content: '';
+  position: relative;
+  height: 240px;
+  background: url(../images/mintbean-dome.png) no-repeat center / cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-h1,
-h4 {
-  text-transform: uppercase;
-  font-family: 'Rubik', sans-serif;
-}
-
-main {
+.card-container {
   display: flex;
   flex-direction: column;
+  padding: 6%;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding: 6%;
 }
-h4 {
+.card-title {
+  height: 5rem;
   font-size: 1.25rem;
   font-weight: 200;
-  height: 10vh;
 }
-main p {
-  margin-bottom: 8%;
+.card-container p {
+  margin-bottom: 1.5rem;
   font-size: 0.89rem;
   font-weight: 200;
+  line-height: 1.5rem;
 }
-/* Join Button */
-a {
-  width: 60vw;
-  height: 6vh;
-  text-decoration: none;
+/*! Example Declaration Order*/
+.button {
+  /** Position */
+  /** Box Modal */
+  padding: 1rem;
+  /** Typography */
   color: var(--secondary-color);
+  font-family: var(--body);
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  /** Visiual */
   background-color: var(--primary-color);
   border-radius: 8px;
-  text-align: center;
-  margin: 0 auto;
-  text-transform: uppercase;
 }
-a p {
-  margin: 4%;
-  font-weight: 300;
-  font-family: 'Rubik', sans-serif;
-}
-
+/* Desktop View */
 @media screen and (min-width: 768px) {
-  h1 {
-    min-height: 3vh;
-    margin: 4%;
+  .section-title {
+    font-size: 2.25rem;
   }
-  article {
+  .card {
     display: flex;
     flex-direction: row;
-    width: 75vw;
-    min-height: 69vh;
+    width: 89%;
+    min-height: 17%;
   }
-  img {
-    width: 40vw;
-    height: 68.9vh;
+  .card::before {
+    width: 190rem;
+    height: 38rem;
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
   }
-  main {
+  .card-container {
     padding: 3%;
   }
-  h4 {
+  .card-title {
     font-size: 1.95rem;
-    height: 10vh;
     word-spacing: 7px;
   }
-  main p {
-    margin-bottom: 8%;
+  .card-container p {
+    /* margin-bottom: 1.5rem; */
     font-size: 0.99rem;
     font-weight: 200;
-    line-height: 3vh;
+    line-height: 1.8rem;
   }
-  /* Join Button */
-  a {
-    width: 16vw;
-    height: 4vh;
-    margin: 0;
-  }
-  a p {
-    margin: 2%;
-    font-size: 1.2rem;
+  .button {
+    font-size: 1.25rem;
   }
 }
