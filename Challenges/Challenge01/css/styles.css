@@ -131,6 +131,9 @@ body {
 
 /* Desktop View */
 @media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
   .fa-bars {
     display: none;
   }
@@ -139,13 +142,15 @@ body {
   #nav-links {
     display: inline-flex;
     display: block ruby;
-    padding-left: 56.5rem;
+    padding-left: 80rem;
     padding-bottom: 1rem;
     padding-top: 0px;
     margin-top: -43px;
-    color: var(--body-font);
+    background-color: rgba(255, 255, 255, 0);
   }
-
+  /* ul#nav-links {
+    background-color: #fff !important;
+  } */
   #nav-links a {
     padding: 1.5rem;
     /* text-align: end; */
