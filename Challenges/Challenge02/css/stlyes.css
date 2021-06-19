@@ -3,9 +3,8 @@
   --header: 'Viga', sans-serif;
   --background-color: #4143b1;
   --primary-color: #5ef4d6;
-  --soft-white: #f1fff6;
-  --secondary-color: #191f26;
-  --secondary-bg-color: #221727;
+  --body-font: #f1fff6;
+  --secondary-color: #221727;
 }
 /* Broswer Reset -> Starts */
 *,
@@ -30,7 +29,7 @@ img {
 body {
   background-color: var(--background-color);
   font-family: var(--body);
-  color: var(--soft-white);
+  color: var(--body-font);
 }
 .about {
   /* Good use case for vh */
@@ -55,7 +54,7 @@ body {
   text-align: left;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--secondary-color);
 }
 
 .section-title,
