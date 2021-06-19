@@ -6,16 +6,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a,
 ul,
 li {
   text-decoration: none;
   list-style: none;
 }
+
 img {
   display: block;
   height: 100%;
 }
+
 /* Broswer Reset -> Ends */
 :root {
   --body: 'Rubik', sans-serif;
@@ -57,6 +60,10 @@ body {
   color: var(--primary-color);
 }
 
+.nav-space {
+  display: none;
+}
+
 .nav a.icon {
   display: block;
   position: absolute;
@@ -78,12 +85,15 @@ body {
   border-radius: 10px;
   background-color: #221727b1;
 }
+
 .hero-body {
   display: flex;
   flex-direction: column;
 }
+
 .hero-title {
   font-size: 1.71rem;
+  font-weight: 300;
   text-transform: uppercase;
   font-family: var(--header);
 }
@@ -112,8 +122,51 @@ body {
   background-color: var(--primary-color);
   border-radius: 8px;
 }
+
 /* Desktop View */
 @media screen and (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+
+  /* TODO: Find flexbox solution */
+  #nav-links {
+    display: block ruby;
+    padding-left: 56.5rem;
+    padding-bottom: 1rem;
+    padding-top: 0px;
+    margin-top: -43px;
+    color: var(--body-font);
+  }
+
+  #nav-links a {
+    padding: 1.5rem;
+    /* text-align: end; */
+    color: var(--body-font);
+  }
+
+  .nav-space {
+    display: block ruby;
+  }
+
+  .nav-button {
+    /** Position */
+    margin-left: -1rem;
+    /** Box Modal */
+    padding: 0.25rem 1.2rem 0.25rem 1.2rem;
+    /** Typography */
+    color: var(--secondary-color);
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    /** Visiual */
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+
   .hero {
     width: 38rem;
     margin: 12rem auto auto 8rem;
