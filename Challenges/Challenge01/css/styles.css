@@ -131,6 +131,7 @@ body {
 
   /* TODO: Find flexbox solution */
   #nav-links {
+    display: inline-flex;
     display: block ruby;
     padding-left: 56.5rem;
     padding-bottom: 1rem;
@@ -147,6 +148,7 @@ body {
 
   .nav-space {
     display: block ruby;
+    display: inline-flex;
   }
 
   .nav-button {
@@ -185,5 +187,14 @@ body {
   .hero-info {
     font-size: 1.25rem;
     line-height: 1.74rem;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 2560px) {
+  /* TODO: Find flexbox solution */
+  #nav-links {
+    padding-left: 88.5rem;
+    background-color: none !important;
   }
 }
