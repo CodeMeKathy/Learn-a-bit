@@ -22,7 +22,7 @@ img {
   --header: 'Viga', sans-serif;
   --background-color: #4143b1;
   --primary-color: #5ef4d6;
-  --body-font: #f1fff6;
+  --body-font: #f1fff6d7;
   --secondary-color: #221727;
 }
 body {
@@ -78,7 +78,10 @@ body {
   border-radius: 10px;
   background-color: #221727b1;
 }
-
+.hero-body {
+  display: flex;
+  flex-direction: column;
+}
 .hero-title {
   font-size: 1.71rem;
   text-transform: uppercase;
@@ -111,4 +114,23 @@ body {
 }
 /* Desktop View */
 @media screen and (min-width: 768px) {
+  .hero {
+    width: 38rem;
+    margin: 12rem auto auto 8rem;
+  }
+
+  .hero {
+    justify-items: start;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-family: var(--header);
+  }
+
+  .hero-info {
+    font-size: 1.25rem;
+    line-height: 1.74rem;
+  }
 }
