@@ -4,30 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Mintbean Learn-a-bit Challenge 01 - Header</title>
   </head>
 
   <body>
-    Intro
-    About
-    Team
-    Contact
-    Join
-
-    Level up bit by bit with Learn-a-bit
-    
-    As the name says, the purpose of
-    Learn-a-bit is about learning one bit
-    of code at a time. In these events,
-    you will build small projects to
-    educate yourself on the fundamentals
-    of web development using HTML, CSS,
-    and JavaScript. These events are
-    relaxed and non-competitive, but are
-    still chalennging enough to push you
-    to use all your resources and
-    knowledge to solve each problem.
-    
-    Join a learn-a-ton
+    <nav class="nav">
+      <img
+        src="../Challenge01/images/learnabit-logo.png"
+        alt="logo"
+        class="logo"
+      />
+      <ul id="nav-links">
+        <a href="">
+          <li>Intro</li>
+        </a>
+        <a href="">
+          <li>About</li>
+        </a>
+        <a href="">
+          <li>Team</li>
+        </a>
+        <a href="">
+          <li>Contact</li>
+        </a>
+        <a href="">
+          <li>Join</li>
+        </a>
+      </ul>
+      <a href="javascript:void(0)" class="icon" onclick="showNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <section class="hero">
+      <header>
+        <h1 class='hero-title'>Level up bit by bit with Learn-a-bit</h1>
+      </header>
+      <p class='hero-info'>
+        As the name says, the purpose of Learn-a-bit is about learning one bit
+        of code at a time. In these events, you will build small projects to
+        educate yourself on the fundamentals of web development using HTML, CSS,
+        and JavaScript. These events are relaxed and non-competitive, but are
+        still challenging enough to push you to use all your resources and
+        knowledge to solve each problem.
+      </p>
+      <a href="/Challenges/Challenge01/index.ht" class="button"
+        >Join a learn-a-ton</a
+      >
+    </section>
+    <script>
+      function showNav() {
+        var x = document.getElementById('nav-links')
+        console.log('hit')
+        if (x.style.display === 'block') {
+          console.log('hide')
+          x.style.display = 'none'
+        } else {
+          x.style.display = 'block'
+          // x.style.overflow = 'visible'
+          console.log('display')
+        }
+      }
+    </script>
   </body>
 </html>

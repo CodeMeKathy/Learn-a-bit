@@ -1,0 +1,114 @@
+/* Broswer Reset -> Starts */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  display: block;
+  height: 100%;
+}
+/* Broswer Reset -> Ends */
+:root {
+  --body: 'Rubik', sans-serif;
+  --header: 'Viga', sans-serif;
+  --background-color: #4143b1;
+  --primary-color: #5ef4d6;
+  --body-font: #f1fff6;
+  --secondary-color: #221727;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--body);
+  color: var(--body-font);
+  background: url(../images/mintbean-dome.png) no-repeat center / cover;
+}
+
+.nav {
+  position: relative;
+  height: 4.5rem;
+  background-color: var(--secondary-color);
+}
+
+.nav .logo {
+  height: 4.5rem;
+  padding: 1rem;
+}
+
+#nav-links {
+  display: none;
+  padding: 0 1.5rem 0rem 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+#nav-links a {
+  padding: 1.5rem;
+  text-align: end;
+  color: var(--primary-color);
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+  font-size: 1.33rem;
+  color: var(--primary-color);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: #221727b1;
+}
+
+.hero-title {
+  font-size: 1.71rem;
+  text-transform: uppercase;
+  font-family: var(--header);
+}
+
+.hero-info {
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-size: 0.78rem;
+}
+
+/*! Example Declaration Order*/
+.button {
+  /** Position */
+  margin-top: 1rem;
+  /** Box Modal */
+  padding: 0.5rem;
+  /** Typography */
+  color: var(--secondary-color);
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  /** Visiual */
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+/* Desktop View */
+@media screen and (min-width: 768px) {
+}
