@@ -28,6 +28,7 @@ img {
   --body-font: #f1fff6d7;
   --secondary-color: #221727;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@ body {
   background-color: var(--secondary-color);
 }
 
-.nav .logo {
+.nav.logo {
   height: 4.5rem;
   padding: 1rem;
 }
@@ -134,19 +135,19 @@ body {
   body {
     height: 100vh;
   }
+
   .nav {
     display: flex;
     width: 100%;
-justify-content: space-between;
+    justify-content: space-between;
   }
+
   .fa-bars {
     display: none;
   }
 
-  /* TODO: Find flexbox solution */
   #nav-links {
     display: inline-flex;
-
     background-color: rgba(255, 255, 255, 0);
   }
 
@@ -166,7 +167,7 @@ justify-content: space-between;
 
   .nav-button {
     /** Position */
-    margin-top: -.2rem;
+    margin-top: -0.2rem;
     margin-left: -1.85rem;
     /** Box Modal */
     padding: 0.25rem 1.2rem 0.25rem 1.2rem;
@@ -205,7 +206,6 @@ justify-content: space-between;
 
 /* 4K Desktop View */
 @media screen and (min-width: 2560px) {
-  /* TODO: Find flexbox solution */
   #nav-links {
     padding-left: 88.5rem;
     background-color: none !important;
