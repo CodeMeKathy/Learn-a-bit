@@ -54,8 +54,10 @@ body {
   color: var(--primary-color);
 }
 
-/* .card-container {
-} */
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .card {
   display: flex;
@@ -90,7 +92,7 @@ body {
 /* Desktop View */
 @media screen and (min-width: 768px) {
   .card-container {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
   }
 }
