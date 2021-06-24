@@ -54,6 +54,11 @@ body {
   color: var(--primary-color);
 }
 
+.team-header {
+  font-family: var(--header);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
 .card-container {
   display: flex;
   flex-direction: column;
