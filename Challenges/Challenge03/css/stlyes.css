@@ -68,7 +68,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 20rem;
-  width: 17rem;
   margin-bottom: 6rem;
   padding: 2rem;
   background-color: var(--background-color);
