@@ -14,25 +14,52 @@
   </head>
   <body>
     <section class="team">
-      <header class="team-header"><h2>Team</h2></header>
+      <header class="team-header">
+        <h2>Team</h2>
+      </header>
       <div class="card-container">
-        <div class="card">
-          <img src="./images/team01.png" alt="" />
-          <h3 class="card-name"></h3>
-          <h5 class="card-title">Fugiat Enim Eiusmod</h5>
-          <p class="card-body">Non aliqua deserunt minim aute nulla labore ut.Aute aliquip ex cillum veniam est sunt aliqua qui Lorem consectetur do exercitation.Eu dolor magna est enim occaecat.</p>
-        </div>
+        <!-- TODO: Refactor to use `article` vice `div` tag-->
+        <article class="card">
+          <!-- TODO: Refactor to wrap the image in a `figure` tag-->
+          <header>
+            <figure>
+  
+              <img src="./images/team01.png" alt="" />
+            </figure>
+            <h3 class="card-name">Alphi Sands</h3>
+            <!-- TODO: Refactor to use `h4` vice `h5` tag-->
+            <h4 class="card-title">Fugiat Enim Eiusmod</h4>
+          </header>
+          <section>
+            <p class="card-body">
+              Non aliqua deserunt minim aute nulla labore ut.Aute aliquip ex
+              cillum veniam est sunt aliqua qui Lorem consectetur do
+              exercitation.Eu dolor magna est enim occaecat.
+            </p>
+          </section>
+          <footer>
+            <!-- TODO: Add icons here -->
+          </footer>
+        </article>
+        <!-- TODO: Refactor to use `article` vice `div` tag-->
         <div class="card">
           <img src="./images/team03.png" alt="" />
-          <h3 class="card-name"></h3>
+          <h3 class="card-name">Hector Gonzales</h3>
           <h5 class="card-title">Velit Cupidatat</h5>
-          <p class="card-body">p ex cillum veniam est sunt aliqua qui Lorem consectetur do exercitation.Eu dolor magna est enim occaecat.</p>
+          <p class="card-body">
+            p ex cillum veniam est sunt aliqua qui Lorem consectetur do
+            exercitation.Eu dolor magna est enim occaecat.
+          </p>
         </div>
+        <!-- TODO: Refactor to use `article` vice `div` tag-->
         <div class="card">
           <img src="./images/team02.png" alt="" />
-          <h3 class="card-name"></h3>
+          <h3 class="card-name">Victoria Halls</h3>
           <h5 class="card-title">Cillum Eiusmod Tempor</h5>
-          <p class="card-body">p ex cillum veniam est sunt aliqua qui Lorem consectetur do exercitation.Eu dolor magna est enim occaecat.</p>
+          <p class="card-body">
+            p ex cillum veniam est sunt aliqua qui Lorem consectetur do
+            exercitation.Eu dolor magna est enim occaecat.
+          </p>
         </div>
       </div>
     </section>

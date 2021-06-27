@@ -1,4 +1,4 @@
-/* Broswer Reset -> Starts */
+/** Broswer Reset -> Starts */
 *,
 *::before,
 *::after {
@@ -16,7 +16,7 @@ img {
   display: block;
   height: 100%;
 }
-/* Broswer Reset -> Ends */
+/** Broswer Reset -> Ends */
 
 :root {
   --body: 'Rubik', sans-serif;
@@ -79,11 +79,14 @@ body {
 
 .card img {
   /* height: 6rem; */
+  /** TODO: Look into Flexbox `gap`for img positioning */
   /* margin-top: -6rem; */
   /* position: relative; */
   width: 10rem;
   background-color: whitesmoke;
   border-radius: 50%;
+  /** TODO: Look into below for img positioning */
+  /* transform:translateX(-50%) */
 }
 
 .card-name {
@@ -93,6 +96,10 @@ body {
 
 .card-title {
   color: var(--primary2-color);
+}
+
+.card-body {
+  font-size: 0.85rem;
 }
 
 /* Desktop View */
