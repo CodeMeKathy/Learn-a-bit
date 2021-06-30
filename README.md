@@ -28,13 +28,15 @@ Learn-a-bit will teach you the fundamentals through a hands-on approach. You wil
 
 - [Challenge #3 - Team](./Challenges/Challenge03)
 
+- [Challenge #4 - Contact](./Challenges/Challenge04)
+
 ---
 
-## Learn-a-bit Feedback
+## Learn-a-bit Guideline
 
-    Here you will find feedback files for every Learn-a-bit challenge.
+    Here you will find guideline files for Learn-a-bit challenges.
 
-- [Challenge #1 - Feedback](./Feedback/challenge01-feedback.md)
+- [Overall guideline](./Guideline/overall-guideline.md)
 
 ---
 
@@ -43,3 +45,5 @@ Learn-a-bit will teach you the fundamentals through a hands-on approach. You wil
     Here you will find solution files for every Learn-a-bit challenge.
 
 - [Challenge #1 - Solution](./Solutions/Challenge01/)
+- [Challenge #2 - Solution](./Solutions/Challenge02/)
+- [Challenge #2 - Solution](./Solutions/Challenge03/)
