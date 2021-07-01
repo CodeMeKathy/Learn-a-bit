@@ -93,20 +93,18 @@ body {
 }
 
 .contact-us--card-icons li {
+  display: flex;
+  align-items: center;
+  height: 2.25rem;
+  width: 2.25rem;
   margin: 0.4rem;
-  padding: 0.3rem;
+  padding: 0.25rem;
   border: 2px solid var(--primary-color);
   border-radius: 50%;
 }
 
-.contact-us--card-icon {
-  height: 2.25rem;
-  width: 2.25rem;
-  stroke-width: 0.07rem;
-}
-
 #github {
-  margin: 0.03rem 0.03rem auto 0.03rem;
+  /* margin: 0.03rem 0.03rem auto 0.03rem; */
   padding: 0.2rem 0.2rem 0 0.2rem;
   background-color: #5ef4d6;
   border-radius: 50%;
@@ -117,6 +115,7 @@ body {
 #linkedin {
   color: #5ef4d6;
   fill: #5ef4d6;
+  stroke-width: 0.009rem;
 }
 
 .form {
@@ -138,9 +137,10 @@ body {
 .form-btn {
   width: 17.5rem;
   /** Box Modal */
-  padding: 0.25rem 1.2rem 0.25rem 1.2rem;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
   margin-top: 0.55rem;
   /** Typography */
+  font-size: 1.1rem;
   color: var(--secondary-color);
   font-family: var(--body);
   font-weight: 500;
@@ -163,5 +163,35 @@ body {
     display: flex;
     flex-direction: row;
     place-content: center;
+  }
+
+  .contact-us--card {
+    width: 35rem;
+    height: 25rem;
+  }
+  .contact-us--card-img {
+    height: 3rem;
+  }
+  .contact-us--card-body {
+    height: 15rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  .form {
+    height: 26rem;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .form-inputs {
+    width: 30rem;
+    padding: 1 rem 1.2rem 1 rem 1.2rem;
+    font-size: 1rem;
+  }
+  .form-btn {
+    width: 30rem;
+  }
+  #message {
+    height: 12rem;
   }
 }
