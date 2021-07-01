@@ -4,12 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Mintbean Learn-a-bit Challenge 04 - Contact</title>
   </head>
 
   <body>
-    Have a question about a Learn-a-bit or workshop? Want to speak at one of our
-    events or discuss a potential collaboration? Contact us, we'd love to start
-    a conversation.
+    <section class="contact-us">
+      <header><h2 class="contact-us--header">Contact Us</h2></header>
+      <div class="contact-us--container">
+        <article class="contact-us--card">
+        <img src="./images/learnabit-logo.png" alt="" srcset="" />
+        <p class="contact-us--card-body">
+          Have a question about a Learn-a-bit or workshop? Want to speak at one
+          of our events or discuss a potential collaboration? Contact us, we'd
+          love to start a conversation.
+        </p>
+        <footer>
+          <ul class="contact-us--card-icons">
+            <li>
+              <i
+                data-feather="globe"
+                style="color: #5ef4d6"
+                class="card-icon"
+              ></i>
+            </li>
+            <li>
+              <i
+                data-feather="github"
+                style=""
+                class="card-icon"
+                id="github"
+              ></i>
+            </li>
+            <li>
+              <i
+                data-feather="linkedin"
+                style=""
+                class="card-icon"
+                id="linkedin"
+              ></i>
+            </li>
+            <li>
+              <i
+                data-feather="mail"
+                style="color: #5ef4d6"
+                class="card-icon"
+              ></i>
+            </li>
+          </ul>
+        </footer>
+      </article>
+      <!-- https://dev.to/codefinity/semantic-html-css-form-5cgj -->
+      <!-- form>(div>label+input)*5+button -->
+      <form class="form">
+        <label for="full-name"></label
+        ><input
+          type="text"
+          placeholder="Full Name"
+          id="full-name"
+          class="form-inputs"
+          required
+        />
+        <label for="email"></label
+        ><input
+          type="text"
+          placeholder="Email"
+          id="email"
+          class="form-inputs"
+          required
+        />
+        <label for="message"></label>
+        <textarea
+          rows="5"
+          placeholder="Message"
+          id="message"
+          class="form-inputs"
+          required
+        >
+        </textarea>
+
+        <button class="form-btn">Send</button>
+      </form>
+      </div>
+    </section>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>
