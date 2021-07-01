@@ -156,6 +156,7 @@ body {
 @media screen and (min-width: 768px) {
   .contact-us--header {
     height: 20rem;
+    font-size: 2rem;
   }
 
   .contact-us--container {
