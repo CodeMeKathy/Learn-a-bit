@@ -16,81 +16,95 @@
 
   <body>
     <section class="contact-us">
-      <header><h2 class="contact-us--header">Contact Us</h2></header>
+      <header>
+        <!-- 
+          TODO: Remove <header>
+          - Using only <h2> and <p> is still semantic and sufficient. 
+          Only one element within header so overkill
+        -->
+        <h2 class="contact-us--header">Contact Us</h2>
+      </header>
       <div class="contact-us--container">
         <article class="contact-us--card">
-        <img src="./images/learnabit-logo.png" alt="" class="contact-us--card-img" />
-        <p class="contact-us--card-body">
-          Have a question about a Learn-a-bit or workshop? Want to speak at one
-          of our events or discuss a potential collaboration? Contact us, we'd
-          love to start a conversation.
-        </p>
-        <footer>
-          <ul class="contact-us--card-icons">
-            <li>
-              <i
-                data-feather="globe"
-                style="color: #5ef4d6"
-                class="contact-us--card-icon"
-              ></i>
-            </li>
-            <li>
-              <i
-                data-feather="github"
-                style=""
-                class="contact-us--card-icon"
-                id="github"
-              ></i>
-            </li>
-            <li>
-              <i
-                data-feather="linkedin"
-                style=""
-                class="contact-us--card-icon"
-                id="linkedin"
-              ></i>
-            </li>
-            <li>
-              <i
-                data-feather="mail"
-                style="color: #5ef4d6"
-                class="contact-us--card-icon"
-              ></i>
-            </li>
-          </ul>
-        </footer>
-      </article>
-      <!-- https://dev.to/codefinity/semantic-html-css-form-5cgj -->
-      <!-- form>(div>label+input)*5+button -->
-      <form class="form">
-        <label for="full-name"></label
-        ><input
-          type="text"
-          placeholder="Full Name"
-          id="full-name"
-          class="form-inputs"
-          required
-        />
-        <label for="email"></label
-        ><input
-          type="text"
-          placeholder="Email"
-          id="email"
-          class="form-inputs"
-          required
-        />
-        <label for="message"></label>
-        <textarea
-        placeholder="Message"
-          rows="5"
-          id="message"
-          class="form-inputs"
-          required
-        >
-        </textarea>
-
-        <button class="form-btn">Send</button>
-      </form>
+          <img
+            src="./images/learnabit-logo.png"
+            alt=""
+            class="contact-us--card-img"
+          />
+          <p class="contact-us--card-body">
+            Have a question about a Learn-a-bit or workshop? Want to speak at
+            one of our events or discuss a potential collaboration? Contact us,
+            we'd love to start a conversation.
+          </p>
+          <!-- <footer> may also be over use, only use if needed. The <ul> serves as a container already -->
+          <footer>
+            <ul class="contact-us--card-icons">
+              <li>
+                <i
+                  data-feather="globe"
+                  style="color: #5ef4d6"
+                  class="contact-us--card-icon"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="github"
+                  style=""
+                  class="contact-us--card-icon"
+                  id="github"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="linkedin"
+                  style=""
+                  class="contact-us--card-icon"
+                  id="linkedin"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="mail"
+                  style="color: #5ef4d6"
+                  class="contact-us--card-icon"
+                ></i>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <!-- https://dev.to/codefinity/semantic-html-css-form-5cgj -->
+        <!-- form>(div>label+input)*5+button -->
+        <form class="form">
+          <label for="full-name"></label
+          ><input
+            type="text"
+            placeholder="Full Name"
+            id="full-name"
+            class="form-inputs"
+            required
+          />
+          <label for="email"></label
+          ><input
+            type="text"
+            placeholder="Email"
+            id="email"
+            class="form-inputs"
+            required
+          />
+          <label for="message"></label>
+          <!-- A space causes the removal of the textarea placeholder 
+        TODO: Remove space
+        -->
+          <textarea
+            placeholder="Message"
+            rows="5"
+            id="message"
+            class="form-inputs"
+            required
+          >
+          </textarea>
+          <button class="form-btn">Send</button>
+        </form>
       </div>
     </section>
     <script src="https://unpkg.com/feather-icons"></script>

@@ -34,6 +34,9 @@ img {
 
 /*! Example Declaration Order*/
 /** Position */
+/*   - padding */
+/*   - margin */
+/*   - display */
 /** Box Modal */
 /** Typography */
 /** Visiual */
@@ -95,6 +98,8 @@ body {
 .contact-us--card-icons li {
   display: flex;
   align-items: center;
+  /* Using `rem` for height and width ties the element sizing to the font size. Using percentages for default is perferred. 
+  padding and margin are better use cases for `rem` */
   height: 2.25rem;
   width: 2.25rem;
   margin: 0.4rem;
@@ -133,6 +138,7 @@ body {
   color: var(--body-font);
   border-radius: 5px;
 }
+/* TODO: Assign font-family to placeholder */
 
 .form-btn {
   width: 17.5rem;
