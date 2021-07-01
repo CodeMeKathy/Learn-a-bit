@@ -178,8 +178,9 @@ body {
     font-weight: normal;
   }
   .form {
-    height: 26rem;
+    height: 26.5rem;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
     gap: 0;
   }
 
