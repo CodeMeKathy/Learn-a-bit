@@ -1,0 +1,167 @@
+/** Broswer Reset -> Starts */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+/** Broswer Reset -> Ends */
+
+:root {
+  --body: 'Rubik', sans-serif;
+  --header: 'Viga', sans-serif;
+  --background-color: #4143b1;
+  --background2-color: #221727;
+  --primary-color: #5ef4d6;
+  --primary2-color: #24e5a3;
+  --body-font: #f1fff6;
+  --secondary-color: #221727;
+}
+
+/*! Example Declaration Order*/
+/** Position */
+/** Box Modal */
+/** Typography */
+/** Visiual */
+
+body {
+  height: 100vh;
+  font-family: var(--body);
+  background-color: var(--background-color);
+  color: var(--body-font);
+}
+
+.contact-us {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us--header {
+  display: flex;
+  place-items: center;
+  height: 4rem;
+  font-family: var(--header);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.contact-us--card {
+  width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 0 3rem 0.95rem 3rem;
+  padding: 2rem;
+  background-color: var(--background2-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.8rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-us--card-body {
+  height: 7rem;
+  display: flex;
+  place-items: center;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.contact-us--card-icons {
+  display: flex;
+}
+
+.contact-us--card-icons li {
+  margin: 0.4rem;
+  padding: 0.3rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.contact-us--card-icon {
+  height: 2.25rem;
+  width: 2.25rem;
+  stroke-width: 0.07rem;
+}
+
+#github {
+  margin: 0.03rem 0.03rem auto 0.03rem;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+  background-color: #5ef4d6;
+  border-radius: 50%;
+  fill: #221727;
+  stroke: #221727;
+}
+
+#linkedin {
+  color: #5ef4d6;
+  fill: #5ef4d6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-inputs {
+  width: 17.5rem;
+  padding: 0.75rem 1.2rem 0.75rem 1.2rem;
+  background-color: var(--background2-color);
+  border: 1px solid var(--primary-color);
+  /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); */
+  color: var(--body-font);
+  border-radius: 5px;
+}
+
+.form-btn {
+  width: 17.5rem;
+  /** Box Modal */
+  padding: 0.25rem 1.2rem 0.25rem 1.2rem;
+  margin-top: 0.55rem;
+  /** Typography */
+  color: var(--secondary-color);
+  font-family: var(--body);
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  /** Visiual */
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .contact-us--header {
+    height: 20rem;
+  }
+
+  .contact-us--container {
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+  }
+}
