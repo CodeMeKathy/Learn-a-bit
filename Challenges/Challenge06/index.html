@@ -4,58 +4,353 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Mintbean Learn-a-bit Challenge 06 - Landing Page</title>
   </head>
 
   <body>
-  <!-- Header section -->
-  Intro
-  About
-  Team
-  Contact
-  Join
+    <!-- Header section -->
+    <section class="header">
+      <nav class="nav">
+        <img
+          src="../Challenge06/images/learnabit-logo.svg"
+          alt="logo"
+          class="nav--logo"
+        />
+        <ul id="nav--links">
+          <a href="">
+            <li>Intro</li>
+          </a>
+          <li class="nav--separtor">|</li>
+          <a href="">
+            <li>About</li>
+          </a>
+          <li class="nav--separtor">|</li>
+          <a href="">
+            <li>Team</li>
+          </a>
+          <li class="nav--separtor">|</li>
+          <a href="">
+            <li>Contact</li>
+          </a>
+          <a href="">
+            <li class="nav--button">Join</li>
+          </a>
+        </ul>
+        <a href="javascript:void(0)" class="icon" onclick="showNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <article class="hero">
+        <div class="hero--card">
+          <header>
+            <h1 class="hero--card-title">
+              Level up bit by bit with Learn-a-bit
+            </h1>
+          </header>
+          <p class="hero--card-info">
+            As the name says, the purpose of Learn-a-bit is about learning one
+            bit of code at a time. In these events, you will build small
+            projects to educate yourself on the fundamentals of web development
+            using HTML, CSS, and JavaScript. These events are relaxed and
+            non-competitive, but are still challenging enough to push you to use
+            all your resources and knowledge to solve each problem.
+          </p>
+          <a href="/Challenges/Challenge06/index.html" class="hero--card-button"
+            >Join a learn-a-ton</a
+          >
+        </div>
+      </article>
+    </section>
 
-  Level up bit by bit with Learn-a-bit
-  
-  As the name says, the purpose of
-  Learn-a-bit is about learning one bit
-  of code at a time. In these events,
-  you will build small projects to
-  educate yourself on the fundamentals
-  of web development using HTML, CSS,
-  and JavaScript. These events are
-  relaxed and non-competitive, but are
-  still chalennging enough to push you
-  to use all your resources and
-  knowledge to solve each problem.
-  
-  Join a learn-a-ton
+    <!-- About section -->
+    <section class="about">
+      <h2 class="section-title">What is it about?</h2>
+      <article class="card">
+        <div class="card-container">
+          <h3 class="card-title">What is learn-a-bit about?</h3>
+          <p>
+            Learn-a-bit will teach you the fundamentals through a hands-on
+            approach. You will gain versatility in the basic tools of the trade
+            and learn the best practices for writing semantic HTML and
+            well-designed CSS. You will improve your design skills and start to
+            create attractive and attention-grabbing portfolio pieces while also
+            gaining confidence to tackle any of the harder hackathons.
+          </p>
+          <p>
+            In the end, the first impression and presentation of products are
+            the main reason for its success and appeal. Our products represent
+            ourselves and our knowledge so we should make it shine in the best
+            light.
+          </p>
+          <a href="/" class="button">Join a learn-a-bit</a>
+        </div>
+      </article>
+    </section>
 
-  <!-- About section -->
-  What is it about?
+    <!-- Team section -->
+    <section class="team">
+      <header class="team-header">
+        <h2>Team</h2>
+      </header>
+      <div class="card-container">
+        <article class="card">
+          <header class="card-header">
+            <figure>
+              <img src="./images/team01.png" alt="" />
+            </figure>
+            <!-- <div class="card-header-info"> -->
+            <h3 class="card-name">Alphi Sands</h3>
+            <h4 class="card-title">Fugiat Enim Eiusmod</h4>
+            <!-- </div> -->
+          </header>
+          <section>
+            <p class="card-body">
+              Non aliqua deserunt minim aute nulla labore ut.Aute aliquip ex
+              cillum veniam est sunt aliqua qui.
+            </p>
+          </section>
+          <footer>
+            <ul class="card-icons">
+              <li>
+                <i
+                  data-feather="globe"
+                  style="color: #5ef4d6"
+                  class="card-icon"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="github"
+                  style=""
+                  class="card-icon"
+                  id="github"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="linkedin"
+                  style=""
+                  class="card-icon"
+                  id="linkedin"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="mail"
+                  style="color: #5ef4d6"
+                  class="card-icon"
+                ></i>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article class="card">
+          <header class="card-header">
+            <figure>
+              <img src="./images/team02.png" alt="" />
+            </figure>
+            <h3 class="card-name">Victoria Halls</h3>
+            <h4 class="card-title">Cillum Eiusmod Tempor</h4>
+          </header>
+          <section>
+            <p class="card-body">
+              Ex cillum veniam est sunt aliqua qui Lorem consectetur do
+              exercitation.Eu dolor magna est enim occaecat.
+            </p>
+          </section>
+          <footer>
+            <ul class="card-icons">
+              <li>
+                <i
+                  data-feather="globe"
+                  style="color: #5ef4d6"
+                  class="card-icon"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="github"
+                  style=""
+                  class="card-icon"
+                  id="github"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="linkedin"
+                  style=""
+                  class="card-icon"
+                  id="linkedin"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="mail"
+                  style="color: #5ef4d6"
+                  class="card-icon"
+                ></i>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article class="card">
+          <header class="card-header">
+            <figure>
+              <img src="./images/team03.png" alt="" />
+            </figure>
+            <h3 class="card-name">Hector Gonzales</h3>
+            <h4 class="card-title">Velit Cupidatat</h4>
+          </header>
+          <section>
+            <p class="card-body">
+              Lorem consectetur do exercitation.Eu dolor magna est enim
+              occaecat.
+            </p>
+          </section>
+          <footer>
+            <ul class="card-icons">
+              <li>
+                <i
+                  data-feather="globe"
+                  style="color: #5ef4d6"
+                  class="card-icon"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="github"
+                  style=""
+                  class="card-icon"
+                  id="github"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="linkedin"
+                  style=""
+                  class="card-icon"
+                  id="linkedin"
+                ></i>
+              </li>
+              <li>
+                <i
+                  data-feather="mail"
+                  style="color: #5ef4d6"
+                  class="card-icon"
+                ></i>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+    </section>
 
-  What is learn-a-bit about?
+    <!-- Contact section -->
+    <section class="contact-us">
+      <h2 class="contact-us--header">Contact Us</h2>
+      <div class="contact-us--container">
+        <article class="contact-us--card">
+          <img
+            src="./images/learnabit-logo.png"
+            alt=""
+            class="contact-us--card-img"
+          />
+          <p class="contact-us--card-body">
+            Have a question about a Learn-a-bit or workshop? Want to speak at
+            one of our events or discuss a potential collaboration? Contact us,
+            we'd love to start a conversation.
+          </p>
 
-  Learn-a-bit will teach you the fundamentals through a hands-on approach. You
-  will gain versatility in the basic tools of the trade and learn the best
-  practices for writing semantic HTML and well-designed CSS. You will improve
-  your design skills and start to create attractive and attention-grabbing
-  portfolio pieces while also gaining confidence to tackle any of the harder
-  hackathons. 
-  
-  In the end, the first impression and presentation of products
-  are the main reason for its success and appeal. Our products represent
-  ourselves and our knowledge so we should make it shine in the best light.
+          <ul class="contact-us--card-icons">
+            <li>
+              <i
+                data-feather="globe"
+                style="color: #5ef4d6"
+                class="contact-us--card-icon"
+              ></i>
+            </li>
+            <li>
+              <i
+                data-feather="github"
+                style=""
+                class="contact-us--card-icon"
+                id="github"
+              ></i>
+            </li>
+            <li>
+              <i
+                data-feather="linkedin"
+                style=""
+                class="contact-us--card-icon"
+                id="linkedin"
+              ></i>
+            </li>
+            <li>
+              <i
+                data-feather="mail"
+                style="color: #5ef4d6"
+                class="contact-us--card-icon"
+              ></i>
+            </li>
+          </ul>
+        </article>
+        <form class="form">
+          <label for="full-name"></label
+          ><input
+            type="text"
+            placeholder="Full Name"
+            id="full-name"
+            class="form-inputs"
+            required
+          />
+          <label for="email"></label
+          ><input
+            type="text"
+            placeholder="Email"
+            id="email"
+            class="form-inputs"
+            required
+          />
+          <label for="message"></label>
+          <textarea
+            placeholder="Message"
+            rows="5"
+            id="message"
+            class="form-inputs"
+            required
+          ></textarea>
+          <button class="form-btn">Send</button>
+        </form>
+      </div>
+    </section>
 
-  Join a learn-a-bit
-
-  <!-- Team section -->
-
-  <!-- Contact section -->
-  Have a question about a Learn-a-bit or workshop?
-  Want to speak at one of our events or discus a potential collaboration? 
-  Contact us, we'd love to start a conversation.
-  
-  <!-- Footer section -->
+    <!-- Footer section -->
+    <section class="footer"></section>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+      function showNav() {
+        var x = document.getElementById('nav-links')
+        console.log('hit')
+        if (x.style.display === 'block') {
+          console.log('hide')
+          x.style.display = 'none'
+        } else {
+          x.style.display = 'block'
+          // x.style.overflow = 'visible'
+          console.log('display')
+        }
+      }
+    </script>
   </body>
 </html>
