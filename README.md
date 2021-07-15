@@ -1,4 +1,4 @@
-<img src="./Challenges/Challenge01/images/learnabit-logo.png" />
+<img src="./Challenges/Challenge01/images/learnabit-logo.svg" />
 
 Welcome to Learn-a-bit
 
@@ -23,12 +23,11 @@ Learn-a-bit will teach you the fundamentals through a hands-on approach. You wil
     Here you will find starter files for every Learna-a-bit challenge.
 
 - [Challenge #1 - Header](./Challenges/Challenge01)
-
 - [Challenge #2 - Card](./Challenges/Challenge02)
-
 - [Challenge #3 - Team](./Challenges/Challenge03)
-
 - [Challenge #4 - Contact](./Challenges/Challenge04)
+- [Challenge #5 - Footer](./Challenges/Challenge05)
+- [Challenge #6 - Landing Page](./Challenges/Challenge06)
 
 ---
 
@@ -46,4 +45,9 @@ Learn-a-bit will teach you the fundamentals through a hands-on approach. You wil
 
 - [Challenge #1 - Solution](./Solutions/Challenge01/)
 - [Challenge #2 - Solution](./Solutions/Challenge02/)
-- [Challenge #2 - Solution](./Solutions/Challenge03/)
+- [Challenge #3 - Solution](./Solutions/Challenge03/)
+- [Challenge #4 - Solution](./Solutions/Challenge04/)
+
+---
+
+For any additional info drop a question in the #Learn-a-bit channel at the Mintbean discord server
